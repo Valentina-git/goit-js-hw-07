@@ -10,3 +10,14 @@ font-size. В результате при перетаскивании полз�
 <br />
 <span id="text">Абракадабра!</span>
  */
+
+let refs = {
+    input: document.querySelector('#font-size-control'),
+    span: document.querySelector('#text'),
+}
+
+function changeFont() {
+    refs.span.style.fontSize = `${refs.input.value}px`
+}
+
+refs.input.addEventListener('input', changeFont);

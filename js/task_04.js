@@ -28,7 +28,7 @@ function increment() {
 }
 
 function decrement() {
-   counterValue -= 1
+  counterValue -= 1
   value.textContent = counterValue;
   console.log(counterValue);
 }
