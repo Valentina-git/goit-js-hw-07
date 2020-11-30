@@ -34,6 +34,7 @@
     </ul>
   </li>
 </ul>
+
 Напиши скрипт, который выполнит следующие операции.
 
 Посчитает и выведет в консоль количество категорий в ul#categories, 
@@ -48,3 +49,20 @@
 Категория: Животные
 Количество элементов: 4
  */
+
+let ul = document.getElementById("categories");
+let items = ul.querySelectorAll(".item")
+
+items.forEach((listItem) => {
+  let h2 = listItem.querySelector('h2');
+  let li = listItem.querySelectorAll('li');
+
+  console.log(`Категория: ${h2.textContent}, Количество элементов: ${li.length}`);
+  //console.log(`Категория: ${h2.innerText}`);
+})
+
+// console.log(items); //NodeList(3) [li.item, li.item, li.item]
+// console.log(`в списке ${items.length} категории`);
+
+
+
