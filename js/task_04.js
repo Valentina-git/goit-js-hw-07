@@ -14,3 +14,24 @@
   <button type="button" data-action="increment">+1</button>
 </div>
  */
+
+ let counterValue = 0;
+let value = document.getElementById('value')
+let btnIncrement = document.querySelector('[data-action="increment"]')
+let btnDecrement = document.querySelector('[data-action="decrement"]')
+
+
+function increment() {
+  counterValue += 1
+  value.textContent = counterValue;
+  console.log(counterValue);
+}
+
+function decrement() {
+   counterValue -= 1
+  value.textContent = counterValue;
+  console.log(counterValue);
+}
+
+btnIncrement.addEventListener('click', increment)
+btnDecrement.addEventListener('click', decrement)

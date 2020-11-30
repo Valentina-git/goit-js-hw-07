@@ -20,3 +20,16 @@ const ingredients = [
   'Приправы',
 ];
 
+let ul = document.getElementById("ingredients");
+const list = document.createElement('ul');
+console.log(list);
+let html = '';
+
+ingredients.forEach((item) => {
+  html += `<li>${item}</li>`
+  return html
+})
+
+list.innerHTML = html;
+ul.append(list)
+

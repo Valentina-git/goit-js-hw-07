@@ -1,6 +1,7 @@
 /**
  * Задание 6
-Напиши скрипт, который бы при потере фокуса на инпуте, проверял его содержимое на правильное количество символов.
+Напиши скрипт, который бы при потере фокуса на инпуте, 
+проверял его содержимое на правильное количество символов.
 
 <input
   type="text"
@@ -22,6 +23,22 @@
 
 #validation-input.invalid {
   border-color: #f44336;
-}
+} */
 
- */
+let inputRef = document.getElementById("validation-input")
+
+// console.log(inputRef.dataset);
+// console.log(inputRef.dataset.length);
+
+inputRef.addEventListener("blur", (event) => {
+  const inputLength = event.target.value
+  if (inputRef.dataset.length == inputLength.length) {
+    inputRef.classList.add('valid')
+    inputRef.classList.remove('invalid')
+  } else {
+    inputRef.classList.add('invalid')
+    inputRef.classList.remove('valid')
+  }
+  // console.log(event.target.value);
+  // console.log('blur');
+})
