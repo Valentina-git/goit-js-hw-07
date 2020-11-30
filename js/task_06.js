@@ -27,11 +27,9 @@
 
 let inputRef = document.getElementById("validation-input")
 
-// console.log(inputRef.dataset);
-// console.log(inputRef.dataset.length);
-
 inputRef.addEventListener("blur", (event) => {
   const inputLength = event.target.value
+
   if (inputRef.dataset.length == inputLength.length) {
     inputRef.classList.add('valid')
     inputRef.classList.remove('invalid')

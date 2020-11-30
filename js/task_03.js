@@ -32,7 +32,6 @@ const images = [
  
 let markUp = "";
 const ulRef = document.querySelector("#gallery");
-console.log(ulRef);
 
 images.forEach((image) => {
   markUp += `<li><img src=${image.url} alt=${image.alt} width=300/></li>`;

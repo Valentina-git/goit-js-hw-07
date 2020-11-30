@@ -9,10 +9,8 @@ input#name-input (событие input), подставляет его
 <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
  */
 
- let inputName = document.getElementById("name-input")
-
+let inputName = document.getElementById("name-input")
 let outputName = document.getElementById("name-output")
-
 
 inputName.addEventListener('input', (event) => {
   outputName.textContent = event.target.value

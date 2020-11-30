@@ -22,7 +22,6 @@ const ingredients = [
 
 let ul = document.getElementById("ingredients");
 const list = document.createElement('ul');
-console.log(list);
 let html = '';
 
 ingredients.forEach((item) => {

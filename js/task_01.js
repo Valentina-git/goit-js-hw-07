@@ -57,12 +57,8 @@ items.forEach((listItem) => {
   let h2 = listItem.querySelector('h2');
   let li = listItem.querySelectorAll('li');
 
-  console.log(`Категория: ${h2.textContent}, Количество элементов: ${li.length}`);
-  //console.log(`Категория: ${h2.innerText}`);
+  console.log(`Категория: ${h2.textContent}, Количество элементов: ${li.length}`)
 })
-
-// console.log(items); //NodeList(3) [li.item, li.item, li.item]
-// console.log(`в списке ${items.length} категории`);
 
 
 
