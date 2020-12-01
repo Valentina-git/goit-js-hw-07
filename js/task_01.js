@@ -53,6 +53,8 @@
 let ul = document.getElementById("categories");
 let items = ul.querySelectorAll(".item")
 
+console.dir(`В списке ${ul.children.length} категории` );
+
 items.forEach((listItem) => {
   let h2 = listItem.querySelector('h2');
   let li = listItem.querySelectorAll('li');
@@ -60,5 +62,16 @@ items.forEach((listItem) => {
   console.log(`Категория: ${h2.textContent}, Количество элементов: ${li.length}`)
 })
 
+
+
+/**
+ * let itemLi = document.querySelectorAll('.item')
+console.log(`В списке ${itemLi.length} категории.`);
+itemLi.forEach((item) => {
+    let h2 = item.querySelector('h2');
+    let li = item.querySelectorAll('li');
+    console.log(`Категория: ${h2.textContent}\nКоличество элементов: ${li.length}`);
+  })
+ */
 
 

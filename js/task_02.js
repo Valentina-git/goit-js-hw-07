@@ -21,14 +21,12 @@ const ingredients = [
 ];
 
 let ul = document.getElementById("ingredients");
-const list = document.createElement('ul');
-let html = '';
+let html = [];
 
 ingredients.forEach((item) => {
-  html += `<li>${item}</li>`
-  return html
+  const li = document.createElement('li');
+  li.textContent = item;
+  html.push(li)
 })
-
-list.innerHTML = html;
-ul.append(list)
+ul.append(...html)
 
